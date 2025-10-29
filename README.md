@@ -57,7 +57,6 @@ vibe-commerce/
     ├── index.html               # HTML template
     ├── vite.config.js           # Vite configuration
     ├── package.json             # Frontend dependencies
-    └── .env.example             # Environment variables template
 ```
 
 ## 🚀 Getting Started
