@@ -27,7 +27,7 @@ A modern, responsive e-commerce shopping cart application built with React, Node
 
 ## 📁 Project Structure
 
-\`\`\`
+```bash
 vibe-commerce/
 ├── backend/
 │   ├── models/
@@ -58,7 +58,7 @@ vibe-commerce/
     ├── vite.config.js           # Vite configuration
     ├── package.json             # Frontend dependencies
     └── .env.example             # Environment variables template
-\`\`\`
+```
 
 ## 🚀 Getting Started
 
@@ -71,66 +71,66 @@ vibe-commerce/
 ### Backend Setup (5 minutes)
 
 1. **Navigate to backend directory:**
-\`\`\`bash
+```bash
 cd backend
-\`\`\`
+```
 
 2. **Install dependencies:**
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 3. **Create environment file:**
-\`\`\`bash
+```bash
 cp .env
-\`\`\`
+```
 
 4. **Configure MongoDB connection in `.env`:**
-\`\`\`
+```
 MONGODB_URI=YOUR_MONGODB_URI
 PORT=5000
-\`\`\`
+```
 
 
 5. **Start the backend server:**
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 **Expected output:**
-\`\`\`
+```
 Server running on http://localhost:5000
 MongoDB connected successfully
-\`\`\`
+```
 
 ### Frontend Setup (5 minutes)
 
 1. **Navigate to frontend directory (in a new terminal):**
-\`\`\`bash
+```bash
 cd frontend
-\`\`\`
+```
 
 2. **Install dependencies:**
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 3. **Create environment file:**
-\`\`\`bash
+```bash
 cp .env
-\`\`\`
+```
 
 4. **Start the development server:**
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 **Expected output:**
-\`\`\`
+```
 VITE v4.x.x  ready in xxx ms
 
 ➜  Local:   http://localhost:3000/
-\`\`\`
+```
 
 5. **Open in browser:**
 Navigate to `http://localhost:3000` and start shopping!
@@ -138,7 +138,7 @@ Navigate to `http://localhost:3000` and start shopping!
 ## 📡 API Endpoints
 
 ### Products Endpoints
-\`\`\`
+```
 GET /api/products
 - Returns: Array of all products
 - Response: [{ id, name, price, description, category, image }, ...]
@@ -146,10 +146,10 @@ GET /api/products
 GET /api/products/:id
 - Returns: Single product by ID
 - Response: { id, name, price, description, category, image }
-\`\`\`
+```
 
 ### Cart Endpoints
-\`\`\`
+```
 GET /api/cart
 - Returns: Current user's cart with items and total
 - Response: { items: [...], total: number, itemCount: number }
@@ -167,10 +167,10 @@ PUT /api/cart/:productId
 DELETE /api/cart/:productId
 - Returns: Updated cart after removal
 - Response: { items: [...], total: number, itemCount: number }
-\`\`\`
+```
 
 ### Checkout Endpoints
-\`\`\`
+```
 POST /api/checkout
 - Body: { name: string, email: string, items: [...] }
 - Returns: Order confirmation with receipt
@@ -182,12 +182,12 @@ POST /api/checkout
     tax: number, 
     total: number 
   }
-\`\`\`
+```
 
 
 ## 🔄 User Flow Diagram
 
-\`\`\`
+```
 1. Browse Products
    ↓
 2. Add to Cart (multiple items)
@@ -208,7 +208,7 @@ POST /api/checkout
    ├─ View Receipt
    ├─ See Order ID
    └─ Continue Shopping
-\`\`\`
+```
 
 ## 🧪 Testing Checklist
 
@@ -243,20 +243,20 @@ POST /api/checkout
 ## 📝 Environment Variables
 
 ### Backend (.env)
-\`\`\`
+```
 # MongoDB Connection
 MONGODB_URI=mongodb://localhost:27017/vibe-commerce
 
 # Server Configuration
 PORT=5000
 NODE_ENV=development
-\`\`\`
+```
 
 ### Frontend (.env)
-\`\`\`
+```
 # API Configuration
 VITE_API_URL=http://localhost:5000/api
-\`\`\`
+```
 
 ## 🎓 Learning Outcomes
 
